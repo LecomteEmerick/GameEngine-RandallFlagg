@@ -19,6 +19,18 @@
     <Filter Include="Fichiers d%27en-tête\Manager">
       <UniqueIdentifier>{3f25f67b-19f5-417f-986e-47b7d74925fd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\EventSystem">
+      <UniqueIdentifier>{d9d7c0e6-3689-4e74-8fd7-46062fda4eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\EventSystem">
+      <UniqueIdentifier>{3395cf99-04ad-4b92-8a9b-c31a070d9bce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\EngineObject">
+      <UniqueIdentifier>{e9c05354-b94b-4fb8-9fa8-e739b7a6363a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\EngineObject">
+      <UniqueIdentifier>{f864e378-bf28-4825-a727-c7f91c09f2b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -30,10 +42,19 @@
     <ClCompile Include="LogManager.cpp">
       <Filter>Fichiers sources\Manager</Filter>
     </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Fichiers sources\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEvent.cpp">
+      <Filter>Fichiers sources\EventSystem</Filter>
+    </ClCompile>
     <ClCompile Include="SceneManager.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Manager</Filter>
     </ClCompile>
     <ClCompile Include="Scene.cpp">
+      <Filter>Fichiers sources\EngineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicObserver.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,10 +65,22 @@
     <ClInclude Include="LogManager.h">
       <Filter>Fichiers d%27en-tête\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Fichiers d%27en-tête\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Fichiers d%27en-tête\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEvent.h">
+      <Filter>Fichiers d%27en-tête\EventSystem</Filter>
+    </ClInclude>
     <ClInclude Include="SceneManager.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers d%27en-tête\Manager</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
+      <Filter>Fichiers d%27en-tête\EngineObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicObserver.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
